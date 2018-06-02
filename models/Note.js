@@ -9,6 +9,7 @@ var noteData = new Schema({
     mainContent : String,
     schedule : String, // 단계별 계획
     goalPrice : String,
+    curPrice : String,
     fundingPeriod : String
 });
 
