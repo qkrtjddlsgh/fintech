@@ -13,7 +13,7 @@ router.post('/', function(req, res){
         if(err){
             console.error(err.message);
         }
-        if(doc.length == 0){
+        else {
             var new_reward = new reward();
             new_reward.title = title;
             new_reward.rewardName = rewardName;
@@ -22,13 +22,6 @@ router.post('/', function(req, res){
 
             var res_data = new Object();
             res_data.code = "4100";
-
-            res.send(res_data);
-            res.end();
-        }
-        else{
-            var res_data = new Object();
-            res_data.code = "3100";
 
             res.send(res_data);
             res.end();
