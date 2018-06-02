@@ -9,6 +9,9 @@ router.post('/', function(req, res){
         if(err){
             console.log(err.message);
         }
+        if(doc.length == 0){
+            var res_data = new On
+        }
     });
 });
 

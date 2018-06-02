@@ -13,6 +13,7 @@ router.post('/', function(req, res){
     var schedule = recv_data.schedule;
     var goalPrice = recv_data.goalPrice;
     var fundingPeriod = recv_data.fundingPeriod;
+    var curPrice = recv_data.curPrice;
 
     note.find({title : title}, function(err, doc){
         if(err){
@@ -28,6 +29,7 @@ router.post('/', function(req, res){
             new_note.schedule = schedule;
             new_note.goalPrice = goalPrice;
             new_note.fundingPeriod = fundingPeriod;
+            new_note.curPrice = curPrice;
             new_note.save();
 
             var res_data = new Object();
