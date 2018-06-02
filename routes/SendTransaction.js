@@ -13,7 +13,7 @@ router.post('/', function(req, res){
             console.log(err.message);
         }
         if(doc.length == 0){
-            var new_transaction = new info();
+            var new_transaction = new transaction();
             new_transaction.id_email = id_email;
             new_transaction.title = title;
             new_transaction.pre_price = pre_price;
