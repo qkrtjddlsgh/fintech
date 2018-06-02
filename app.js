@@ -17,6 +17,7 @@ var GetInfo = require('./routes/GetInfo');
 var MakeInfo = require('./routes/MakeInfo');
 var GetSchedule = require('./routes/GetSchedule');
 var MakeReserve = require('./routes/MakeReserve');
+var SendTransaction = require('./routes/SendTransaction');
 
 var app = express();
 
@@ -56,6 +57,7 @@ app.use('/GetInfo', GetInfo);
 app.use('/MakeInfo', MakeInfo);
 app.use('/GetSchedule', GetSchedule);
 app.use('/MakeReserve', MakeReserve);
+app.use('/SendTransaction', SendTransaction);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
