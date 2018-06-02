@@ -9,6 +9,7 @@ router.post('/', function(req, res){
     var farmerName = recv_data.farmerName;
     var category = recv_data.category;
     var content = recv_data.content;
+    var mainContent = recv_data.mainContent;
     var schedule = recv_data.schedule;
     var goalPrice = recv_data.goalPrice;
     var fundingPeriod = recv_data.fundingPeriod;
@@ -23,6 +24,7 @@ router.post('/', function(req, res){
             new_note.farmerName = farmerName;
             new_note.category = category;
             new_note.content = content;
+            new_note.mainContent = mainContent;
             new_note.schedule = schedule;
             new_note.goalPrice = goalPrice;
             new_note.fundingPeriod = fundingPeriod;

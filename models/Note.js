@@ -6,6 +6,7 @@ var noteData = new Schema({
     farmerName : String,
     category : String,
     content : String,
+    mainContent : String,
     schedule : String, // 단계별 계획
     goalPrice : String,
     fundingPeriod : String

@@ -21,6 +21,7 @@ router.post('/', function(req, res){
             res_data.title = doc[0].title;
             res_data.category = doc[0].category;
             res_data.content = doc[0].content;
+            res_data.mainContent = doc[0].mainContent;
             res_data.goalPrice = doc[0].goalPrice;
             res_data.fundingPeriod = doc[0].fundingPeriod;
             res_data.schedule = doc[0].schedule;
