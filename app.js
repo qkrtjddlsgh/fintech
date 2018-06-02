@@ -13,6 +13,8 @@ var MakeNote = require('./routes/MakeNote');
 var FindNote = require('./routes/FindNote');
 var GetReward = require('./routes/GetReward');
 var MakeReward = require('./routes/MakeReward');
+var GetInfo = require('./routes/GetInfo');
+var MakeInfo = require('./routes/MakeInfo');
 
 var app = express();
 
@@ -48,6 +50,8 @@ app.use('/MakeNote', MakeNote);
 app.use('/FindNote', FindNote);
 app.use('/GetReward', GetReward);
 app.use('/MakeReward', MakeReward);
+app.use('/GetInfo', GetInfo);
+app.use('/MakeInfo', MakeInfo);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
