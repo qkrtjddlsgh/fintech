@@ -19,6 +19,7 @@ router.post('/', function(req, res){
         }
         if(doc.length == 0){
             var new_note = new note();
+            new_note.title = title;
             new_note.farmerName = farmerName;
             new_note.category = category;
             new_note.content = content;
