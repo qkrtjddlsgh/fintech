@@ -11,6 +11,8 @@ var CheckReg = require('./routes/CheckReg');
 var GetNote = require('./routes/GetNote');
 var MakeNote = require('./routes/MakeNote');
 var FindNote = require('./routes/FindNote');
+var GetReward = require('./routes/GetReward');
+var MakeReward = require('./routes/MakeReward');
 
 var app = express();
 
@@ -44,6 +46,8 @@ app.use('/CheckReg', CheckReg);
 app.use('/GetNote', GetNote);
 app.use('/MakeNote', MakeNote);
 app.use('/FindNote', FindNote);
+app.use('/GetReward', GetReward);
+app.use('/MakeReward', MakeReward);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
